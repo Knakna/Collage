@@ -1,6 +1,6 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 15px;
+    font-size: 20px;
     line-height: 1.5;
     color: #000;
 
@@ -15,8 +15,10 @@ body {
 }
 
 .main {
+    position: relative;
+
     height: 100vh;
-    padding: 50px;
+    padding: 50px 0;
 
     background: linear-gradient(#c3d1da, rgb(202, 180, 202));
 }
@@ -24,26 +26,219 @@ body {
 .main__container {
     display: flex;
     flex-wrap: wrap;
+
+    width: 1600px;
+    height: 100%;
+
+
+    padding: 0 15px;
+    margin: 0 auto;
 }
+
 
 .main__card {
-    width: 300px;
-    height: 300px;
-    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    position: relative;
+
+    padding: 5px;
+    margin: 5px;
+
+    width: 400px;
+    height: 400px;
+
+    background-color: beige;
+    border: 1px solid rgb(83, 15, 138);
+    box-shadow: 5px 5px 15px #ccc;
+
+
+    transition: transform .5s linear;
 }
 
-.main__wrap {
+
+
+.main__card:first-child {
     width: 300px;
-    height: 250px;
+    height: 400px;
+
+    top: 10px;
+    left: 80px;
+
+    transform-origin: top right;
+    transform: rotate(-35deg);
+}
+
+.main__card:nth-child(2) {
+    width: 400px;
+    height: 500px;
+
+    top: 70px;
+    left: 70px;
+
+    transform: rotate(-10deg);
+}
+
+
+
+.main__card:nth-child(3) {
+    width: 300px;
+    height: 450px;
+
+    top: 40px;
+    left: 10px;
+
+    transform: rotate(35deg);
+}
+
+.main__card:nth-child(4) {
+    width: 350px;
+    height: 450px;
+
+    transform: rotate(15deg);
+    transform-origin: top left;
+}
+
+.main__card:nth-child(5) {
+    width: 300px;
+    height: 450px;
+
+    bottom: 320px;
+    left: 180px;
+
+    transform: rotate(25deg);
+    transform-origin: top left;
+}
+
+.main__card:nth-child(6) {
+    width: 400px;
+    height: 350px;
+
+    top: -160px;
+    left: 10px;
+
+    transform: rotate(15deg);
+    transform-origin: top left;
+}
+
+.main__card:nth-child(7) {
+    width: 525px;
+    height: 500px;
+
+    left: -170px;
+    top: -160px;
+
+    transform: rotate(5deg);
+}
+
+.main__card:nth-child(8) {
+    width: 300px;
+    height: 450px;
+
+    left: -170px;
+    top: -190px;
+
+    transform: rotate(-15deg);
+}
+
+.main__card:nth-child(9) {
+    width: 300px;
+    height: 400px;
+
+    left: 100px;
+    bottom: 500px;
+
+    transform: rotate(-25deg);
+}
+
+
+.main__card:nth-child(10) {
+    width: 400px;
+    height: 600px;
+
+    left: 100px;
+    bottom: 500px;
+
+    transform: rotate(-15deg);
+}
+
+
+.main__card:nth-child(11) {
+    width: 400px;
+    height: 600px;
+
+    left: 100px;
+    bottom: 500px;
+
+    transform: rotate(25deg);
+}
+
+.main__card:nth-child(12) {
+    width: 450px;
+    height: 550px;
+
+    left: 100px;
+    bottom: 1000px;
+
+    transform: rotate(-5deg);
+}
+
+.main__card:nth-child(13) {
+    width: 350px;
+    height: 450px;
+
+    left: 100px;
+    bottom: 900px;
+
+    transform: rotate(15deg);
+}
+
+.main__card:nth-child(14) {
+    width: 400px;
+    height: 550px;
+
+    left: 200px;
+    bottom: 1000px;
+
+    transform: rotate(10deg);
+}
+
+
+.main__card:hover {
+    z-index: 100;
+    transform: scale(1.2);
+}
+
+
+.main__wrap {
+    width: 90%;
+    height: 90%;
 }
 
 
 .main__img {
-    width: auto;
+    width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
-.main__text {
+.main__subtitle {
     text-align: center;
+    color: rgb(83, 15, 138);
+}
+
+.main__title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    font-size: 200px;
+    color: #ccc;
+    text-transform: uppercase;
+
+    transform: translate(-50%, -50%);
+
+    text-shadow: 1px 1px 1px rgb(202, 36, 188), 0 0 .2em rgb(83, 15, 138);
 }
