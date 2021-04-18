@@ -1,9 +1,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 14px;
+    font-size: 20px;
     line-height: 1.5;
-    color: #000;
-
 }
 
 *,
@@ -17,8 +15,8 @@ body {
 .main {
     position: relative;
 
-    padding: 50px 0;
     height: 100vh;
+    padding: 30px;
 
     background: linear-gradient(#c3d1da, rgb(202, 180, 202));
 }
@@ -29,11 +27,11 @@ body {
     justify-content: center;
     align-items: center;
 
-    max-width: 1200px;
+    max-width: 1100px;
+    height: 100%;
 
 
-
-    padding: 0 15px;
+    padding: 115px;
     margin: 0 auto;
 }
 
@@ -44,114 +42,103 @@ body {
     flex-direction: column;
     align-items: center;
 
+    flex: 0 1 30%;
+
     position: relative;
 
     padding: 5px;
-    margin: 5px;
-
-    width: 190px;
-    height: 210px;
+    margin: -105px -60px;
 
     background-color: beige;
     border: 1px solid rgb(83, 15, 138);
-    box-shadow: 5px 5px 15px #ccc;
-
+    box-shadow: 5px 5px 15px rgb(75, 60, 71);
 
     transition: transform .5s linear;
 }
 
 
-
 .main__card:first-child {
-
+    left: -50px;
 
     transform-origin: top right;
     transform: rotate(-35deg);
 }
 
 .main__card:nth-child(2) {
-
-
     transform: rotate(-10deg);
 }
 
 
 
 .main__card:nth-child(3) {
-
-
     transform: rotate(35deg);
 }
 
 .main__card:nth-child(4) {
-
-
     transform: rotate(15deg);
     transform-origin: top left;
 }
 
 .main__card:nth-child(5) {
-
-
     transform: rotate(25deg);
     transform-origin: top left;
 }
 
 .main__card:nth-child(6) {
+    top: 50px;
 
     transform: rotate(15deg);
     transform-origin: top left;
 }
 
 .main__card:nth-child(7) {
+    left: 40px;
+    top: 90px;
 
-    top: -60px;
     transform: rotate(5deg);
 }
 
 .main__card:nth-child(8) {
-
     top: -80px;
 
     transform: rotate(-15deg);
 }
 
 .main__card:nth-child(9) {
-
-
     transform: rotate(-25deg);
 }
 
-
 .main__card:nth-child(10) {
-
     transform: rotate(-15deg);
 }
 
 
 .main__card:nth-child(11) {
-
     top: -60px;
+
     transform: rotate(25deg);
 }
 
 .main__card:nth-child(12) {
+    top: 60px;
+    left: -30px;
 
-    top: -60px;
     transform: rotate(-5deg);
 }
 
 .main__card:nth-child(13) {
     top: -60px;
+    left: -50px;
 
     transform: rotate(15deg);
 }
 
 .main__card:nth-child(14) {
+    top: -115px;
 
-    top: -60px;
     transform: rotate(10deg);
 }
+
 
 
 .main__card:hover {
